@@ -109,7 +109,7 @@ nav ul li a {                                                                   
     font-size: 15px;
     margin: 4px 1px;
     cursor: pointer;
-    background-color: gray; 
+    background-color: darkred; 
     position: relative;                                                                                                     /* relative positioning after content absolute positioning. */
     left: 2%;
     top: 42%;
@@ -147,26 +147,36 @@ nav ul li a {                                                                   
 .main-content {
     width: 100%;
     height: 250px;
-    background-color: gray;
+    background-color: rgb(161, 156, 156);
     color: black;
     border-radius: 0px;
     box-shadow: 2px 2px 12px;
     display: flex;
     margin: 1% auto 25px auto;
     position: relative;
+    
 }
 
 .contact-me {
-    width: 100%;
+    width:100%;
     height: 150px;
     background-color: rgb(161, 156, 156);
     color: black;
-    align-items: center;
     border-radius: 0px;
     box-shadow: 2px 2px 12px;
     display: flex;
-    margin: 1% auto 25px auto;
+    margin: 2% auto 25px auto;
     position: relative;
+    
+}
+
+.contact-text {
+    text-align: left;
+    padding: 5px;
+    display:-moz-box;
+    width: 100%;
+    height: 250px;
+    margin-left: 10px;
 }
 
 .main-content h2{
@@ -293,6 +303,7 @@ nav ul li a {                                                                   
 }
 .contact-me{
     height: 200px;
+    width: 100%;
 }
 }
 
@@ -317,12 +328,8 @@ nav ul li a {                                                                   
 .contact-me p{
     padding: 20px;
     margin: 0px;
-    color: white;
-    
-    
+    color: white;  
 }
-
-/* new content for homework 8 */
 
 body {
     background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6));
@@ -336,7 +343,7 @@ body {
       background-color: #FF6B02;
     }
     20% {
-      background-color: #FF0602;
+      background-color: #FFFA02;
     }
     30% {
       background-color: #FF0289;
