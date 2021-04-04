@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+}
+
+body{                                                                                                                       /* Sets the background color. Since there is a background image, the color is behind the image. */
+    background-color: lightgrey;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    
+}
+
+ul {                                                                                                                        /* Bullet points are hidden for the sub-headings */
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+section {                                                                                                                   /* Adds the cover page and customizes how it should look */
+    width: 100%;
+    height: 480px;
+    background-image: url("../images/img3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {                                                                                                                        /* adds a space between sub-headings */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: gray;
+    box-shadow: 2px 2px 10px;
+    padding: 0px;
+    
+}
+
+nav ul {                                                                                                                    /* Sub-headings are displayed through the flex command */
+    display: flex;
+}
+
+nav ul li a {                                                                                                               /* Customizes the sub-headings */
+    margin: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 300px;
+}
+
+.developer {                                                                                                                /* Customizes the <developer class> */
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
+    padding: 20px;
+}
+
+.active {                                                                                                                   /* Home tag which would the first tag to be active */
+    font-weight: bold;
+    color:tomato;
+}
+
+.content p:nth-child(1){                                                                                                    /* First <p> tag */
+    color: white;
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 20px;
+}
+
+.content p:nth-child(2){                                                                                                    /* Second <p> tag */
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0px;
+    
+}
+
+.content p:nth-child(3){                                                                                                    /* Third <p> tag */
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.content p {                                                                                                                /* Customize the positioning of the <p> tag content */
+    line-height: 0px;
+    margin: 25px 0px 25px;
+}
+
+.button {                                                                                                                   /* Customizes the <button> class */
+    border: none;
+    font-weight: bold;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 1px;
+    cursor: pointer;
+    background-color: gray; 
+    position: relative;                                                                                                     /* relative positioning after content absolute positioning. */
+    left: 2%;
+    top: 42%;
+    transform: translate(-17%, 42%);
+}
+
+.button:active{
+    transform: (1.1);
+}
+
+
+.button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.content {
+    position: relative;
+    left: 23%;
+    top: 20%;
+    transform: translate(-13%, 42%);
+}
+
+.profile {
+    bottom: 660px;                                                                                      /* Google chrome supported */
+    left: 75%;
+    overflow:hidden;
+    height: 560px;
+    position: absolute;
+    transform: translateX(-75%);
+
+}
+
+.main-content {
+    width: 80%;
+    height: 250px;
+    background-color: rgb(161, 156, 156);
+    color: black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px;
+    display: flex;
+    margin: 1% auto 25px auto;
+    position: relative;
+}
+
+.main-content h2{
+    padding: 20px;
+    margin: 0px;
+}
+
+.main-content p{
+    padding: 5px;
+    
+}
+
+.work-content{
+  color: black;
+  font-weight: bold;
+  margin: 275px 0;
+  padding: 0px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.work-content > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid red;
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.work-content > div {
+    flex: 0 0 77%;
+  }
+  
+  .work-content p {
+    margin-bottom: 20px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+    border: 5px solid blue;
+    background-color: lightslategray;
+    color:yellow;
+    font-weight: bolder;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px ;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+
+.flex-item:first-child {
+    min-height: 400px;
+    width: 100%;
+    flex-basis: auto;
+}
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+ 
+}
+
+.fortnite {
+    background-image: url("../images/fortnite.jpg");
+  }
+  
+  .resort {
+    background-image: url("../images/resort.jpg");
+  }
+  
+  .coding {
+    background-image: url("../images/html.jpg");
+  }
+  
+  .stock{
+    background-image: url("../images/stock.jpg");
+  }
+
+  .code-refactor  {
+      background-image: url("../images/refactor.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 50px;
+  }
+
+@media screen and (max-width: 1000px){
+    .profile{
+        height: 550px;
+        left: 96%;
+        transform: translateX(-90%);
+    }
+
+.main-content{
+    top: 50%;
+} 
+.button{
+    margin: 28px; 
+} 
+.main-content{
+    width: 90%;
+    border-radius: 20px;
+}
+.about-text{
+    width: 400px;
+}
+
+.main-content{
+    padding: 2% 5% 0px 5%;
+    height: auto;
+}
+.flex-container{
+    flex-grow: 1;
+    margin: 10px;
+}
+.contact-me{
+    height: 200px;
+}
+}
+
+@media screen and (max-width: 768px){
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+}
+
+.contact-me {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(161, 156, 156);
+    color: black;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px;
+    display: inline-block;
+    margin: 4% auto 25px auto;
+    position: relative;
+}
+
+.contact-me h2{
+    padding: 20px;
+    margin: 0px;
+}
+
+.contact-me p{
+    padding: 20px;
+    margin: 0px;
+    color: white;
+}
